@@ -5,7 +5,7 @@
     <string name="username_label">Username</string>
     <string name="password_label">Password</string>
     <string name="create_new_label">Create New Account</string>
-    <string name="email_label">Email Adress</string>
+    <string name="email_label">Email Address</string>
     <string name="continue_label">Continue</string>
     <string name="selfi_label">Selfie Time</string>
     <string name="name_label">Name</string>
@@ -17,6 +17,8 @@
     <string name="discover_label">Discover \nThe Beauty \nOf Earth</string>
     <string name="new_account_label">New Account</string>
     <string name="fill_label">Please fill up the forms below \nfor informations</string>
+    <string name="selfie_message_label">Let the world know yourself \nmore better and ever</string>
+    <string name="plus_label">+</string>
 
 
 </resources>

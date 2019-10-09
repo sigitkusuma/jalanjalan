@@ -84,9 +84,11 @@
                 android:fontFamily="@font/mmedium"
                 android:lines="1"
                 android:paddingLeft="12dp"
+                android:paddingRight="12dp"
                 android:textColor="@color/blackprimary"
                 android:inputType="text"
-                android:importantForAutofill="no" />
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor"/>
         </LinearLayout>
 
         <LinearLayout
@@ -113,7 +115,10 @@
                 android:inputType="textPassword"
                 android:lines="1"
                 android:paddingLeft="12dp"
-                android:textColor="@color/blackprimary" />
+                android:paddingRight="12dp"
+                android:textColor="@color/blackprimary"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor"/>
         </LinearLayout>
 
         <LinearLayout
@@ -139,7 +144,10 @@
                 android:inputType="textEmailAddress"
                 android:lines="1"
                 android:paddingLeft="12dp"
-                android:textColor="@color/blackprimary" />
+                android:paddingRight="12dp"
+                android:textColor="@color/blackprimary"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor"/>
         </LinearLayout>
 
     </LinearLayout>
