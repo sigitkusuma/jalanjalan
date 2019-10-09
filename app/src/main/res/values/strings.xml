@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TiketSaya</string>
+    <string name="slogan">Wisata Jadi Lebih Asyik!</string>
+    <string name="signin">SIGN IN</string>
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="create_new_label">Create New Account</string>
+    <string name="email_label">Email Adress</string>
+    <string name="continue_label">Continue</string>
+    <string name="selfi_label">Selfie Time</string>
+    <string name="name_label">Name</string>
+    <string name="bio_label">Your Passion ?</string>
+    <string name="explore_label">EXPLORE NOW</string>
+    <string name="todo">todo</string>
+    <string name="awesome_label">You Awesome</string>
+    <string name="welcome_label">Welcome to TiketSaya \nand enjoy your tour</string>
+    <string name="discover_label">Discover \nThe Beauty \nOf Earth</string>
+    <string name="new_account_label">New Account</string>
+    <string name="fill_label">Please fill up the forms below \nfor informations</string>
+
+
+</resources>
