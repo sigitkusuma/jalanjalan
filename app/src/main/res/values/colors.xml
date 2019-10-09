@@ -9,4 +9,6 @@
     <color name="bluesecondary">#2595F5</color>
     <color name="blackprimary">#21272C</color>
     <color name="bgprimary">#edf1f8</color>
+    <color name="greenprimary">#1abc9c</color>
+    <color name="linecolor">#ededed</color>
 </resources>

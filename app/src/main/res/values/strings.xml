@@ -19,6 +19,21 @@
     <string name="fill_label">Please fill up the forms below \nfor informations</string>
     <string name="selfie_message_label">Let the world know yourself \nmore better and ever</string>
     <string name="plus_label">+</string>
+    <string name="dashboard_label">My Dashboard</string>
+    <string name="name_view_label">Sigit Surya Kusuma</string>
+    <string name="traveler_label">Traveller</string>
+    <string name="balance_label">$ 120</string>
+    <string name="main_menu_label">Main Menu</string>
+    <string name="explore_beauty_label">Explore the beauty of world</string>
+    <string name="pisa_label">Pisa</string>
+    <string name="torri_label">Torri</string>
+    <string name="pagoda_label">Pagoda</string>
+    <string name="candi_label">Borobudur</string>
+    <string name="sphinx_label">Sphinx</string>
+    <string name="monas_label">Monas</string>
+    <string name="ticket_label">TicketTips</string>
+    <string name="learn_label">Learn it for many benefits</string>
+    <string name="buy_label">Buy Ticket</string>
 
 
 </resources>
