@@ -147,7 +147,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:contentDescription="@string/todo" />
-
     <Button
         android:id="@+id/btn_plus"
         android:layout_width="35dp"
