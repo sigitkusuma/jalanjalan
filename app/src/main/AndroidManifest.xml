@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TicketCheckoutAct"></activity>
+        <activity android:name=".SuccessBuyTicketAct"></activity>
+        <activity android:name=".TicketCheckoutAct" />
         <activity android:name=".TicketDetailAct" />
         <activity android:name=".HomeAct" />
         <activity android:name=".MyProfileAct" />
