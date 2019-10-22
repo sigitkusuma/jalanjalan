@@ -23,8 +23,7 @@ public class TicketCheckoutAct extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent backtodetail = new Intent(TicketCheckoutAct.this, TicketDetailAct.class);
-                startActivity(backtodetail);
+                onBackPressed();
             }
         });
 
