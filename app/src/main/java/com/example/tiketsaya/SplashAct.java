@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class SplashAct extends AppCompatActivity {
 
-    Animation addsplash;
+    Animation addsplash, bottomtotop;
     ImageView applogo;
     TextView apptitle;
 
@@ -24,10 +24,15 @@ public class SplashAct extends AppCompatActivity {
 
         //load animation
         addsplash = AnimationUtils.loadAnimation(this, R.anim.addsplash);
+        bottomtotop = AnimationUtils.loadAnimation(this, R.anim.bottomtotop);
 
         //load element
         applogo = findViewById(R.id.applogo);
         apptitle = findViewById(R.id.apptitle);
+
+        //run animation
+        applogo.startAnimation(addsplash);
+        apptitle.startAnimation(bottomtotop);
 
         //membuat timer
         Handler handler = new Handler();
