@@ -7,31 +7,33 @@
     tools:context=".SplashAct">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="192dp"
-        android:layout_height="110dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/applogo"
+        android:layout_width="200dp"
+        android:layout_height="119dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="219dp"
         android:src="@drawable/applogocolored"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
 
     <TextView
+        android:id="@+id/apptitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/mlight"
-        android:text="@string/slogan"
-        android:textColor="@color/grayprimary"
-        android:textSize="22sp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/mlight"
+        android:text="Wisata Jadi Lebih Asyik!"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/applogo">
+
+    </TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
