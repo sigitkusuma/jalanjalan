@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyTicketAct"></activity>
+        <activity android:name=".SplashAct"></activity>
+        <activity android:name=".EditProfileAct" />
+        <activity android:name=".MyTicketAct" />
         <activity android:name=".SuccessBuyTicketAct" />
         <activity android:name=".TicketCheckoutAct" />
         <activity android:name=".TicketDetailAct" />
@@ -20,13 +22,6 @@
         <activity android:name=".RegisterOneAct" />
         <activity android:name=".SignInAct" />
         <activity android:name=".GetStartedAct" />
-        <activity android:name=".SplashAct">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
