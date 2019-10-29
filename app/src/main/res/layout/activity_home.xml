@@ -48,8 +48,8 @@
 
             <View
                 android:id="@+id/view2"
-                android:layout_width="59dp"
-                android:layout_height="59dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/bg_view_circle_picture"
@@ -71,39 +71,38 @@
             </com.github.florent37.shapeofview.shapes.CircleView>
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/nama_lengkap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
                 android:fontFamily="@font/mmedium"
-                android:text="@string/name_view_label"
                 android:textColor="#fff"
                 android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@+id/view2"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <TextView
+                android:id="@+id/bio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
                 android:fontFamily="@font/mlight"
-                android:text="@string/traveler_label"
                 android:textColor="#fff"
                 android:textSize="14sp"
                 app:layout_constraintStart_toEndOf="@+id/view2"
-                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                app:layout_constraintTop_toBottomOf="@+id/nama_lengkap" />
 
             <TextView
+                android:id="@+id/user_balance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="36dp"
                 android:layout_marginEnd="24dp"
                 android:fontFamily="@font/mmedium"
-                android:text="@string/balance_label"
                 android:textColor="@color/greenprimary"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 

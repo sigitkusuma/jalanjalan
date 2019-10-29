@@ -22,9 +22,7 @@ public class SignInAct extends AppCompatActivity {
 
     TextView btn_new_account; Button btn_sign_in;
     EditText xusername, xpassword;
-
     DatabaseReference reference;
-
     String USERNAME_KEY = "username_key";
     String username_key = "";
 
@@ -45,13 +43,17 @@ public class SignInAct extends AppCompatActivity {
                 startActivity(gotoregisterone);
             }
         });
-
         btn_sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                String username = xusername.getText().toString();
+                //disable button continue dan terdapat text loading
+                btn_sign_in.setEnabled(false);
+                btn_sign_in.setText("Loading ...");
+
+                final String username = xusername.getText().toString();
                 final String password = xpassword.getText().toString();
+
                 reference = FirebaseDatabase.getInstance().getReference()
                         .child("Users").child(username);
 
@@ -79,20 +81,16 @@ public class SignInAct extends AppCompatActivity {
                             else {
                                 Toast.makeText(getApplicationContext(), "Password Salah", Toast.LENGTH_SHORT).show();
                             }
-
                         }
                         else {
                             Toast.makeText(getApplicationContext(),"Username Tidak Tersedia", Toast.LENGTH_SHORT).show();
                         }
                     }
-
                     @Override
                     public void onCancelled(@NonNull DatabaseError databaseError) {
                         Toast.makeText(getApplicationContext(),"Database Error", Toast.LENGTH_SHORT).show();
                     }
                 });
-
-
             }
         });
     }

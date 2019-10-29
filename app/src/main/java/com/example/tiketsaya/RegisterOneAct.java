@@ -44,6 +44,10 @@ public class RegisterOneAct extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                //disable button continue dan terdapat text loading
+                btn_continue.setEnabled(false);
+                btn_continue.setText("Loading ...");
+
                 //menyimpan data secara local
                 SharedPreferences sharedPreferences = getSharedPreferences(USERNAME_KEY, MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
