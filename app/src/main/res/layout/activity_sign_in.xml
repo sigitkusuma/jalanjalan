@@ -54,6 +54,7 @@
                     android:layout_height="wrap_content"/>
 
                 <EditText
+                    android:id="@+id/xusername"
                     android:fontFamily="@font/mmedium"
                     android:textColor="@color/blackprimary"
                     android:paddingLeft="12dp"
@@ -84,6 +85,7 @@
                 android:layout_height="wrap_content"/>
 
             <EditText
+                android:id="@+id/xpassword"
                 android:inputType="textPassword"
                 android:fontFamily="@font/mmedium"
                 android:textColor="@color/blackprimary"

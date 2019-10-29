@@ -67,7 +67,7 @@
                     android:id="@+id/photo_home_user"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/pic_dummy_angga"></ImageView>
+                    android:src="@drawable/icon_nopic"></ImageView>
             </com.github.florent37.shapeofview.shapes.CircleView>
 
             <TextView
