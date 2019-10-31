@@ -38,8 +38,6 @@ public class RegisterOneAct extends AppCompatActivity {
         password = findViewById(R.id.password);
         email_address = findViewById(R.id.email_address);
 
-
-
         btn_continue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,8 +69,6 @@ public class RegisterOneAct extends AppCompatActivity {
 
                     }
                 });
-
-
 
                 Intent gotogegistertwo = new Intent(RegisterOneAct.this, RegisterTwoAct.class);
                 startActivity(gotogegistertwo);

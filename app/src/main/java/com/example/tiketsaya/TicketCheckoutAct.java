@@ -28,11 +28,12 @@ public class TicketCheckoutAct extends AppCompatActivity {
     Button btn_pay, btn_tambah, btn_kurang;
     TextView text_jumlah_tiket, textmybalance, texttotalharga, nama_wisata, lokasi, ketentuan;
     ImageView noticeuang;
+    Integer sisa_balance = 0;
     Integer ValueJumlahTiket =1;
     Integer mybalance = 0;
     Integer Valuetotalharga = 0;
     Integer Valuehargatiket = 0;
-    DatabaseReference reference, reference2, reference3;
+    DatabaseReference reference, reference2, reference3, reference4;
 
     String USERNAME_KEY = "username_key";
     String username_key = "";
@@ -100,10 +101,8 @@ public class TicketCheckoutAct extends AppCompatActivity {
                 nama_wisata.setText(dataSnapshot.child("nama_wisata").getValue().toString());
                 lokasi.setText(dataSnapshot.child("lokasi").getValue().toString());
                 ketentuan.setText(dataSnapshot.child("ketentuan").getValue().toString());
-
                 date_wisata = dataSnapshot.child("date_wisata").getValue().toString();
                 time_wisata = dataSnapshot.child("time_wisata").getValue().toString();
-
                 Valuehargatiket = Integer.valueOf(dataSnapshot.child("harga_tiket").getValue().toString());
                 Valuetotalharga = Valuehargatiket * ValueJumlahTiket;
                 texttotalharga.setText("US$ "+ Valuetotalharga+"");
@@ -160,22 +159,35 @@ public class TicketCheckoutAct extends AppCompatActivity {
                 //menyimpan data user kepada firebase dan membuat table baru "mytcket"
                 reference3 = FirebaseDatabase.getInstance()
                         .getReference().child("MyTickets")
-                        .child(username_key_new).child(nama_wisata.getText().toString() + nomor_transaksi);
+                        .child(username_key_new).child(nama_wisata.getText().toString() +nomor_transaksi);
                 reference3.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        reference3.getRef().child("id_tiket").setValue(nama_wisata.getText().toString() +nomor_transaksi);
                         reference3.getRef().child("nama_wisata").setValue(nama_wisata.getText().toString());
                         reference3.getRef().child("lokasi").setValue(lokasi.getText().toString());
                         reference3.getRef().child("ketentuan").setValue(ketentuan.getText().toString());
-
                         reference3.getRef().child("date_wisata").setValue(date_wisata);
                         reference3.getRef().child("time_wisata").setValue(time_wisata);
-
                         reference3.getRef().child("jumlah_tiket").setValue(ValueJumlahTiket);
 
                         Intent gotosuccess = new Intent(TicketCheckoutAct.this, SuccessBuyTicketAct.class);
                         startActivity(gotosuccess);
                     }
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+                //mengambil data user dari database
+                reference4 = FirebaseDatabase.getInstance().getReference().child("Users").child(username_key_new);
+                reference.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        sisa_balance = mybalance - Valuetotalharga;
+                        reference4.getRef().child("user_balance").setValue(sisa_balance);
+                    }
+
                     @Override
                     public void onCancelled(@NonNull DatabaseError databaseError) {
 
