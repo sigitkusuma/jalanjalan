@@ -81,6 +81,7 @@ public class HomeAct extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent gotopisaticket= new Intent(HomeAct.this, TicketDetailAct.class);
+                //meletakan data kepada intent
                 gotopisaticket.putExtra("jenis_tiket", "Pisa");
                 startActivity(gotopisaticket);
             }
