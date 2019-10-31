@@ -38,6 +38,9 @@ public class TicketCheckoutAct extends AppCompatActivity {
     String username_key = "";
     String username_key_new ="";
 
+    String date_wisata ="";
+    String time_wisata ="";
+
     //generate no int secara random
     //karena kita ingin membuat transaksi secara unik
     Integer nomor_transaksi = new Random().nextInt();
@@ -97,6 +100,10 @@ public class TicketCheckoutAct extends AppCompatActivity {
                 nama_wisata.setText(dataSnapshot.child("nama_wisata").getValue().toString());
                 lokasi.setText(dataSnapshot.child("lokasi").getValue().toString());
                 ketentuan.setText(dataSnapshot.child("ketentuan").getValue().toString());
+
+                date_wisata = dataSnapshot.child("date_wisata").getValue().toString();
+                time_wisata = dataSnapshot.child("time_wisata").getValue().toString();
+
                 Valuehargatiket = Integer.valueOf(dataSnapshot.child("harga_tiket").getValue().toString());
                 Valuetotalharga = Valuehargatiket * ValueJumlahTiket;
                 texttotalharga.setText("US$ "+ Valuetotalharga+"");
@@ -160,6 +167,10 @@ public class TicketCheckoutAct extends AppCompatActivity {
                         reference3.getRef().child("nama_wisata").setValue(nama_wisata.getText().toString());
                         reference3.getRef().child("lokasi").setValue(lokasi.getText().toString());
                         reference3.getRef().child("ketentuan").setValue(ketentuan.getText().toString());
+
+                        reference3.getRef().child("date_wisata").setValue(date_wisata);
+                        reference3.getRef().child("time_wisata").setValue(time_wisata);
+
                         reference3.getRef().child("jumlah_tiket").setValue(ValueJumlahTiket);
 
                         Intent gotosuccess = new Intent(TicketCheckoutAct.this, SuccessBuyTicketAct.class);
