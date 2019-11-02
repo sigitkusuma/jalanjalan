@@ -246,7 +246,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:orientation="vertical">
-
             <Button
                 android:id="@+id/btn_buy_ticket"
                 android:layout_width="match_parent"
@@ -258,8 +257,4 @@
                 android:textSize="22sp" />
         </LinearLayout>
     </LinearLayout>
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

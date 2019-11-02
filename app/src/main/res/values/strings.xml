@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TiketSaya</string>
+    <string name="app_name">Jalan-Jalan</string>
     <string name="slogan">Wisata Jadi Lebih Asyik!</string>
     <string name="signin">SIGN IN</string>
     <string name="username_label">Username</string>
@@ -34,6 +34,4 @@
     <string name="ticket_label">TicketTips</string>
     <string name="learn_label">Learn it for many benefits</string>
     <string name="buy_label">Buy Ticket</string>
-
-
 </resources>
