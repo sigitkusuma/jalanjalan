@@ -4,9 +4,9 @@
     <color name="colorPrimaryDark">#203DD1</color>
     <color name="colorAccent">#D81B60</color>
 
-    <color name="myblue">#203DD1</color>
+    <color name="mygreenbtn">#3CBE2E</color>
     <color name="grayprimary">#8D8D8D</color>
-    <color name="bluesecondary">#2595F5</color>
+    <color name="greensecondary">#2CE01F</color>
     <color name="blackprimary">#21272C</color>
     <color name="bgprimary">#edf1f8</color>
     <color name="greenprimary">#1abc9c</color>

@@ -34,7 +34,7 @@ public class TicketAdapter extends RecyclerView.Adapter<TicketAdapter.MyViewHold
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
         myViewHolder.xnama_wisata.setText(myTickets.get(i).getNama_wisata());
         myViewHolder.xlokasi.setText(myTickets.get(i).getLokasi());
-        myViewHolder.xjumlah_tiket.setText(myTickets.get(i).getJumlah_tiket() + "Tickets");
+        myViewHolder.xjumlah_tiket.setText(myTickets.get(i).getJumlah_tiket() +  "Tickets");
         final String getNamaWisata = myTickets.get(i).getNama_wisata();
 
         myViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
