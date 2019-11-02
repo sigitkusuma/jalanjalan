@@ -60,47 +60,29 @@
                 android:src="@drawable/ic_ticket_buy" />
 
             <LinearLayout
-                android:layout_width="120dp"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="6dp"
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/xnama_wisata"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/mregular"
-                    android:text="Menara Pisa"
                     android:textColor="@color/blackprimary"
                     android:textSize="16sp" />
 
                 <TextView
+                    android:id="@+id/xlokasi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/mlight"
-                    android:text="Pisa City, Italy"
                     android:textColor="@color/grayprimary"
                     android:textSize="12sp" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="12dp"
-                    android:fontFamily="@font/mlight"
-                    android:text="3 Tickets"
-                    android:textColor="@color/fontcolor"
-                    android:textSize="12sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -124,13 +106,13 @@
                 android:textColor="@color/blackprimary"
                 android:textSize="16sp" />
             <TextView
+                android:id="@+id/xdate_wisata"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/mlight"
-                android:text="December 19, 2019"
                 android:textColor="@color/grayprimary"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -146,13 +128,13 @@
                 android:textColor="@color/blackprimary"
                 android:textSize="16sp" />
             <TextView
+                android:id="@+id/xtime_wisata"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/mlight"
-                android:text="10 AM to 12 AM"
                 android:textColor="@color/grayprimary"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -168,13 +150,13 @@
                 android:textColor="@color/blackprimary"
                 android:textSize="16sp" />
             <TextView
+                android:id="@+id/xketentuan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/mlight"
-                android:text="Children over the age of 3 \n are required to purchase a ticket to enter the landmark."
                 android:textColor="@color/grayprimary"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
         <ImageView

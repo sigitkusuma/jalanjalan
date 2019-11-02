@@ -88,6 +88,7 @@ use the correct informations"
                        android:textSize="20sp" />
 
                    <EditText
+                       android:id="@+id/xnama_lengkap"
                        android:layout_width="match_parent"
                        android:layout_height="50dp"
                        android:background="@drawable/bg_input_edit"
@@ -118,6 +119,7 @@ use the correct informations"
                        android:textSize="20sp" />
 
                    <EditText
+                       android:id="@+id/xbio"
                        android:layout_width="match_parent"
                        android:layout_height="50dp"
                        android:background="@drawable/bg_input_edit"
@@ -148,6 +150,7 @@ use the correct informations"
                        android:textSize="20sp" />
 
                    <EditText
+                       android:id="@+id/xusername"
                        android:layout_width="match_parent"
                        android:layout_height="50dp"
                        android:background="@drawable/bg_input_edit"
@@ -178,12 +181,13 @@ use the correct informations"
                        android:textSize="20sp" />
 
                    <EditText
+                       android:id="@+id/xpassword"
                        android:layout_width="match_parent"
                        android:layout_height="50dp"
                        android:background="@drawable/bg_input_edit"
                        android:fontFamily="@font/mmedium"
                        android:lines="1"
-                       android:inputType="textPassword"
+                       android:inputType="text"
                        android:paddingLeft="12dp"
                        android:paddingRight="12dp"
                        android:importantForAutofill="no"
@@ -208,6 +212,7 @@ use the correct informations"
                        android:textSize="20sp" />
 
                    <EditText
+                       android:id="@+id/xemail_address"
                        android:layout_width="match_parent"
                        android:layout_height="50dp"
                        android:background="@drawable/bg_input_edit"
@@ -244,14 +249,14 @@ use the correct informations"
                app:layout_constraintStart_toStartOf="parent"
                app:layout_constraintTop_toTopOf="@+id/view">
                <ImageView
-                   android:id="@+id/photo_home_user"
+                   android:id="@+id/photo_edit_profile"
                    android:layout_width="95dp"
                    android:layout_height="95dp"
-                   android:src="@drawable/pic_dummy_angga">
+                   android:src="@drawable/icon_nopic">
                </ImageView>
            </com.github.florent37.shapeofview.shapes.CircleView>
            <Button
-               android:id="@+id/btn_plus"
+               android:id="@+id/btn_add_new_photo"
                android:layout_width="35dp"
                android:layout_height="35dp"
                android:layout_marginStart="67dp"

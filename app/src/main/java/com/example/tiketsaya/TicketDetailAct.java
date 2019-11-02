@@ -26,7 +26,6 @@ public class TicketDetailAct extends AppCompatActivity {
     ImageView header_ticket_detail;
     DatabaseReference reference;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

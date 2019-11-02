@@ -25,7 +25,7 @@ import java.util.ArrayList;
 
 public class MyProfileAct extends AppCompatActivity {
 
-    LinearLayout item_my_ticket; Button btn_edit_profile;
+    LinearLayout item_my_ticket; Button btn_edit_profile, btn_back_home, btn_sign_out;
     TextView nama_lengkap, bio;
     ImageView photo_profile;
 
@@ -46,7 +46,9 @@ public class MyProfileAct extends AppCompatActivity {
         getUsernameLocal();
 
         item_my_ticket = findViewById(R.id.item_my_ticket);
+        btn_back_home = findViewById(R.id.btn_back_home);
         btn_edit_profile = findViewById(R.id.btn_edit_profile);
+        btn_sign_out = findViewById(R.id.btn_sign_out);
         nama_lengkap = findViewById(R.id.nama_lengkap);
         bio = findViewById(R.id.bio);
         photo_profile = findViewById(R.id.photo_profile);
@@ -67,7 +69,6 @@ public class MyProfileAct extends AppCompatActivity {
                         .load(dataSnapshot.child("url_photo_profile")
                                 .getValue().toString()).centerCrop().fit()
                         .into(photo_profile);
-
             }
 
             @Override
@@ -100,6 +101,30 @@ public class MyProfileAct extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
+            }
+        });
+
+        btn_back_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent backtohome = new Intent(MyProfileAct.this, HomeAct.class);
+                startActivity(backtohome);
+            }
+        });
+
+        btn_sign_out.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //menghapus isi nilai / value dari username local
+                //menyimpan data secara local
+                SharedPreferences sharedPreferences = getSharedPreferences(USERNAME_KEY, MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString(username_key, null);
+                editor.apply();
+
+                Intent backtohome = new Intent(MyProfileAct.this, SignInAct.class);
+                startActivity(backtohome);
+                finish();
             }
         });
     }
