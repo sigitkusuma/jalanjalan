@@ -1,4 +1,4 @@
-package com.example.tiketsaya;
+package com.kusumastudio.jalanjalan;
 
 public class MyTicket {
     String nama_wisata, lokasi;

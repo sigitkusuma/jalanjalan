@@ -1,4 +1,4 @@
-package com.example.tiketsaya;
+package com.kusumastudio.jalanjalan;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

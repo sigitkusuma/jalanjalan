@@ -1,4 +1,4 @@
-package com.example.tiketsaya;
+package com.kusumastudio.jalanjalan;
 
 import org.junit.Test;
 

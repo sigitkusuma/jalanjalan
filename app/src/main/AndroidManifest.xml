@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tiketsaya">
+    package="com.kusumastudio.jalanjalan">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SplashAct"
+            android:name="com.kusumastudio.jalanjalan.SplashAct"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,18 +18,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EditProfileAct" />
-        <activity android:name=".MyTicketAct" />
-        <activity android:name=".SuccessBuyTicketAct" />
-        <activity android:name=".TicketCheckoutAct" />
-        <activity android:name=".TicketDetailAct" />
-        <activity android:name=".HomeAct" />
-        <activity android:name=".MyProfileAct" />
-        <activity android:name=".SuccessRegisterAct" />
-        <activity android:name=".RegisterTwoAct" />
-        <activity android:name=".RegisterOneAct" />
-        <activity android:name=".SignInAct" />
-        <activity android:name=".GetStartedAct" />
+        <activity android:name="com.kusumastudio.jalanjalan.EditProfileAct" />
+        <activity android:name="com.kusumastudio.jalanjalan.MyTicketAct" />
+        <activity android:name="com.kusumastudio.jalanjalan.SuccessBuyTicketAct" />
+        <activity android:name="com.kusumastudio.jalanjalan.TicketCheckoutAct" />
+        <activity android:name="com.kusumastudio.jalanjalan.TicketDetailAct" />
+        <activity android:name="com.kusumastudio.jalanjalan.HomeAct" />
+        <activity android:name="com.kusumastudio.jalanjalan.MyProfileAct" />
+        <activity android:name="com.kusumastudio.jalanjalan.SuccessRegisterAct" />
+        <activity android:name="com.kusumastudio.jalanjalan.RegisterTwoAct" />
+        <activity android:name="com.kusumastudio.jalanjalan.RegisterOneAct" />
+        <activity android:name="com.kusumastudio.jalanjalan.SignInAct" />
+        <activity android:name="com.kusumastudio.jalanjalan.GetStartedAct" />
     </application>
 
 </manifest>

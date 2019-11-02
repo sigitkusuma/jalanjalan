@@ -1,4 +1,4 @@
-package com.example.tiketsaya;
+package com.kusumastudio.jalanjalan;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,8 +25,6 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
-
-import java.net.URI;
 
 public class RegisterTwoAct extends AppCompatActivity {
 

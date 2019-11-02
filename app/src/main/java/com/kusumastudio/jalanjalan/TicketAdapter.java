@@ -1,4 +1,4 @@
-package com.example.tiketsaya;
+package com.kusumastudio.jalanjalan;
 
 import android.content.Context;
 import android.content.Intent;
