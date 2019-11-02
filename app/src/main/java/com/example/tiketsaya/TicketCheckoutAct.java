@@ -167,9 +167,9 @@ public class TicketCheckoutAct extends AppCompatActivity {
                         reference3.getRef().child("nama_wisata").setValue(nama_wisata.getText().toString());
                         reference3.getRef().child("lokasi").setValue(lokasi.getText().toString());
                         reference3.getRef().child("ketentuan").setValue(ketentuan.getText().toString());
+                        reference3.getRef().child("jumlah_tiket").setValue(ValueJumlahTiket.toString());
                         reference3.getRef().child("date_wisata").setValue(date_wisata);
                         reference3.getRef().child("time_wisata").setValue(time_wisata);
-                        reference3.getRef().child("jumlah_tiket").setValue(ValueJumlahTiket);
 
                         Intent gotosuccess = new Intent(TicketCheckoutAct.this, SuccessBuyTicketAct.class);
                         startActivity(gotosuccess);
