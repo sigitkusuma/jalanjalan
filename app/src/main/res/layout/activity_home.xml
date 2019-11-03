@@ -156,7 +156,7 @@
                     android:baselineAligned="false">
 
                     <LinearLayout
-                        android:id="@+id/btn_ticket_pisa"
+                        android:id="@+id/btn_ticket_pantai"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -167,20 +167,20 @@
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:contentDescription="@string/todo"
-                            android:src="@drawable/icon_pisa" />
+                            android:src="@drawable/icon_balekambang" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/mregular"
-                            android:text="@string/pisa_label"
+                            android:text="Pantai"
                             android:textColor="@color/blackprimary"
                             android:textSize="16sp" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/btn_ticket_torri"
+                        android:id="@+id/btn_ticket_bns"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -191,20 +191,20 @@
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:contentDescription="@string/todo"
-                            android:src="@drawable/icon_torri" />
+                            android:src="@drawable/icon_bns" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/mregular"
-                            android:text="@string/torri_label"
+                            android:text="BNS"
                             android:textColor="@color/blackprimary"
                             android:textSize="16sp" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/btn_ticket_candi"
+                        android:id="@+id/btn_ticket_coban"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -215,14 +215,14 @@
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:contentDescription="@string/todo"
-                            android:src="@drawable/icon_borobudur" />
+                            android:src="@drawable/icon_coban" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/mregular"
-                            android:text="@string/candi_label"
+                            android:text="Coban"
                             android:textColor="@color/blackprimary"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -238,7 +238,7 @@
                     android:baselineAligned="false">
 
                     <LinearLayout
-                        android:id="@+id/btn_ticket_pagoda"
+                        android:id="@+id/btn_ticket_paralayang"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -249,20 +249,20 @@
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:contentDescription="@string/todo"
-                            android:src="@drawable/icon_pagoda" />
+                            android:src="@drawable/icon_paralayang" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/mregular"
-                            android:text="@string/pagoda_label"
+                            android:text="Paralayang"
                             android:textColor="@color/blackprimary"
                             android:textSize="16sp" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/btn_ticket_monas"
+                        android:id="@+id/btn_ticket_jtp"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -273,20 +273,20 @@
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:contentDescription="@string/todo"
-                            android:src="@drawable/icon_monas" />
+                            android:src="@drawable/icon_jtp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/mregular"
-                            android:text="@string/monas_label"
+                            android:text="Dino Park"
                             android:textColor="@color/blackprimary"
                             android:textSize="16sp" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/btn_ticket_sphinx"
+                        android:id="@+id/btn_ticket_museum"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -297,14 +297,14 @@
                             android:layout_width="64dp"
                             android:layout_height="64dp"
                             android:contentDescription="@string/todo"
-                            android:src="@drawable/icon_sphinx" />
+                            android:src="@drawable/icon_museum" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/mregular"
-                            android:text="@string/sphinx_label"
+                            android:text="Museum"
                             android:textColor="@color/blackprimary"
                             android:textSize="16sp" />
                     </LinearLayout>

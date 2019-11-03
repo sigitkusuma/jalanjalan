@@ -83,6 +83,12 @@ public class TicketCheckoutAct extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 mybalance = Integer.valueOf(dataSnapshot.child("user_balance").getValue().toString());
                 textmybalance.setText("US$ "+ mybalance+"");
+                if (Valuehargatiket > mybalance){
+                    btn_pay.animate().translationY(250).alpha(0).setDuration(350).start();
+                    btn_pay.setEnabled(false);
+                    textmybalance.setTextColor(Color.parseColor("#D1206B"));
+                    noticeuang.setVisibility(View.VISIBLE);
+                }
             }
 
             @Override
@@ -121,6 +127,7 @@ public class TicketCheckoutAct extends AppCompatActivity {
                     btn_kurang.animate().alpha(1).setDuration(300).start();
                     btn_kurang.setEnabled(true);
                 }
+
                 Valuetotalharga = Valuehargatiket * ValueJumlahTiket;
                 texttotalharga.setText("US$ "+ Valuetotalharga+"");
                 if (Valuetotalharga > mybalance){
