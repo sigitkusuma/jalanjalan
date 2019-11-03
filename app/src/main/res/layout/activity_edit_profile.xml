@@ -32,7 +32,7 @@
                android:layout_height="wrap_content"
                android:layout_marginTop="48dp"
                android:fontFamily="@font/mregular"
-               android:text="Edit Profile"
+               android:text="@string/edit_profile"
                android:textAlignment="center"
                android:textColor="#fff"
                android:textSize="24sp"
@@ -46,8 +46,7 @@
                android:layout_marginTop="8dp"
                android:fontFamily="@font/mlight"
                android:lineSpacingExtra="9dp"
-               android:text="We highly suggest you to \n
-use the correct informations"
+               android:text="@string/subtitle_edit_profile"
                android:textAlignment="center"
                android:textColor="#fff"
                android:textSize="20sp"
@@ -187,7 +186,7 @@ use the correct informations"
                        android:background="@drawable/bg_input_edit"
                        android:fontFamily="@font/mmedium"
                        android:lines="1"
-                       android:inputType="text"
+                       android:inputType="textPassword"
                        android:paddingLeft="12dp"
                        android:paddingRight="12dp"
                        android:importantForAutofill="no"
@@ -252,7 +251,8 @@ use the correct informations"
                    android:id="@+id/photo_edit_profile"
                    android:layout_width="95dp"
                    android:layout_height="95dp"
-                   android:src="@drawable/icon_nopic">
+                   android:src="@drawable/icon_nopic"
+                   android:contentDescription="TODO">
                </ImageView>
            </com.github.florent37.shapeofview.shapes.CircleView>
            <Button
@@ -280,7 +280,8 @@ use the correct informations"
                android:weightSum="4"
                app:layout_constraintEnd_toEndOf="parent"
                app:layout_constraintStart_toStartOf="parent"
-               app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+               app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+               android:baselineAligned="false">
                <LinearLayout
                    android:layout_width="0dp"
                    android:layout_height="wrap_content"
@@ -302,7 +303,7 @@ use the correct informations"
                </LinearLayout>
 
                <LinearLayout
-                   android:layout_marginLeft="24dp"
+                   android:layout_marginStart="24dp"
                    android:layout_width="0dp"
                    android:layout_height="wrap_content"
                    android:layout_weight="3"
@@ -310,7 +311,7 @@ use the correct informations"
                    <Button
                        style="@style/btn_blue_primary"
                        android:id="@+id/btn_save_profile"
-                       android:text="SAVE PROFILE" />
+                       android:text="@string/save_profile" />
                </LinearLayout>
            </LinearLayout>
 

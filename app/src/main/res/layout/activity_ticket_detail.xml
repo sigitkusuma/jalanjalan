@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="TODO" />
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/title_ticket"
@@ -65,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/mregular"
-            android:text="Information"
+            android:text="@string/information"
             android:textColor="@color/blackprimary"
             android:textSize="20sp" />
 
@@ -74,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:fontFamily="@font/mlight"
-            android:text="Knowing before travel"
+            android:text="@string/subtitle_ticket_detail"
             android:textColor="@color/grayprimary"
             android:textSize="16sp" />
 
@@ -93,10 +93,11 @@
             <ImageView
                 android:src="@drawable/ic_photo"
                 android:layout_width="55dp"
-                android:layout_height="55dp"/>
+                android:layout_height="55dp"
+                android:contentDescription="@string/todo"/>
 
             <LinearLayout
-                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginTop="6dp"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
@@ -115,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/mlight"
-                    android:text="Tripod Everywhere"
+                    android:text="@string/tripod_fas"
                     android:textColor="@color/grayprimary"
                     android:textSize="12sp" />
 
@@ -131,10 +132,11 @@
             <ImageView
                 android:src="@drawable/ic_wifi"
                 android:layout_width="55dp"
-                android:layout_height="55dp"/>
+                android:layout_height="55dp"
+                android:contentDescription="@string/todo"/>
 
             <LinearLayout
-                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginTop="6dp"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
@@ -153,7 +155,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/mlight"
-                    android:text="Connect for any tourist"
+                    android:text="@string/subtitle_content"
                     android:textColor="@color/grayprimary"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -168,10 +170,11 @@
             <ImageView
                 android:src="@drawable/ic_food"
                 android:layout_width="55dp"
-                android:layout_height="55dp"/>
+                android:layout_height="55dp"
+                android:contentDescription="@string/todo"/>
 
             <LinearLayout
-                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginTop="6dp"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
@@ -190,7 +193,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/mlight"
-                    android:text="Dance and Foods"
+                    android:text="@string/dance_and_foods"
                     android:textColor="@color/grayprimary"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -219,7 +222,8 @@
         android:weightSum="4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:baselineAligned="false">
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -241,7 +245,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"

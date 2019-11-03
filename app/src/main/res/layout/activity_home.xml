@@ -67,7 +67,9 @@
                     android:id="@+id/photo_home_user"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/icon_nopic"></ImageView>
+                    android:src="@drawable/icon_nopic"
+                    android:contentDescription="@string/todo">
+                </ImageView>
             </com.github.florent37.shapeofview.shapes.CircleView>
 
             <TextView
@@ -174,7 +176,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/mregular"
-                            android:text="Pantai"
+                            android:text="@string/pantai"
                             android:textColor="@color/blackprimary"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -198,7 +200,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/mregular"
-                            android:text="BNS"
+                            android:text="@string/bns"
                             android:textColor="@color/blackprimary"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -222,7 +224,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/mregular"
-                            android:text="Coban"
+                            android:text="@string/coban"
                             android:textColor="@color/blackprimary"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -256,7 +258,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/mregular"
-                            android:text="Paralayang"
+                            android:text="@string/paralayang"
                             android:textColor="@color/blackprimary"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -280,7 +282,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/mregular"
-                            android:text="Dino Park"
+                            android:text="@string/dino_park"
                             android:textColor="@color/blackprimary"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -304,7 +306,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/mregular"
-                            android:text="Museum"
+                            android:text="@string/museum"
                             android:textColor="@color/blackprimary"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -355,34 +357,35 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:layout_marginRight="24dp"
+                        android:layout_marginEnd="24dp"
                         android:src="@drawable/item_one"
                         android:layout_width="227dp"
-                        android:layout_height="98dp"/>
+                        android:layout_height="98dp"
+                        android:contentDescription="@string/todo" />
 
                     <ImageView
-                        android:layout_marginRight="24dp"
+                        android:layout_marginEnd="24dp"
                         android:src="@drawable/item_one"
                         android:layout_width="227dp"
-                        android:layout_height="98dp"/>
+                        android:layout_height="98dp"
+                        android:contentDescription="@string/todo"/>
 
                     <ImageView
-                        android:layout_marginRight="24dp"
+                        android:layout_marginEnd="24dp"
                         android:src="@drawable/item_one"
                         android:layout_width="227dp"
-                        android:layout_height="98dp"/>
+                        android:layout_height="98dp"
+                        android:contentDescription="@string/todo"/>
 
                     <ImageView
-                        android:layout_marginRight="24dp"
+                        android:layout_marginEnd="24dp"
                         android:src="@drawable/item_one"
                         android:layout_width="227dp"
-                        android:layout_height="98dp"/>
+                        android:layout_height="98dp"
+                        android:contentDescription="@string/todo"/>
                 </LinearLayout>
 
             </HorizontalScrollView>
-
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
